@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{height: 40px;}
+        .wrapper div{height: 40px;
+        width: 70px;}
+        .z2{z-index: 2;
+        margin-bottom: -40px;
+    border-right:20px solid white;
+background: green;}
+.z1{z-index: 2;
+margin-left: 70px;border-left: 20px solid black;
+background: red;}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="z2"></div>
+        <div class="z1"></div>
+    </div>
+</body>
+</html>

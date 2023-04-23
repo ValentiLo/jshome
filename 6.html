@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{width: 50em;}  
+      .left-section{width: calc(100%-10em);}
+      .right-section{width: 10em;}
+      .div1{height: 7em;
+    background-color: red;}
+    .div2{height: 5em;
+    background-color: orange;}
+    .div3{height: 7em;
+    background-color: yellow;}
+    .div4{height: 5em;
+    background-color:green;}
+    .div5{height: 10em;
+    background-color: aqua;}
+    .container{display: grid;grid-template-areas: "2 4"
+    "3 1"
+    ". 5";}
+    .div1{grid-area: 1;}
+    .div2{grid-area: 2;}
+    .div3{grid-area: 3;}
+    .div4{grid-area: 4;}
+    .div5{grid-area: 5;}
+    
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="div2 left-section">2</div>
+        <div class="div3 left-section">3</div>
+        <div class="div4 right-section">4</div>
+        <div class="div1 right-section">1</div>
+        <div class="div5 right-section">5</div>
+    </div>
+</body>
+</html>
