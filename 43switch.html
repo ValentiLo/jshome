@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3></h3>
+    <ol>
+        <li>
+            <dl>
+            <dt>для чего нужен оператор switch:</dt>
+        <dd>Оператор switch javascript служит для проверки переменной на множество значений</dd>
+        </dl></li>
+    <li><dl>
+        <dt>что делается в case</dt>
+        <dd>в каждом case проверяется одно из значений, в случае подходящего значения выполняется тот или иной блок операторов, соответствующий данному case.</dd>
+    </dl></li>
+    <li>
+        <dl> <dt>
+Для чего нужен break
+        </dt>
+             <dd>Оператор break обязателен после каждого рассмотренного значения переменной (после каждого case); если его не использовать, то будут выведены все, расположенные ниже операторы</dd></dl>
+       
+    </li>
+    <li>
+        <dl>
+            <dt>Синтаксис оператора switch</dt>
+            <dd>switch(a) <br>
+                {<br>
+                    case 0: // if (a === 0)<br>
+                    case 1: // if (a === 0)<br>
+                        alert("Ноль или один"); // тогда выводим ...<br>
+                        break;<br>
+                    case 2: // if (a === 2)<br>
+                            alert("Два"); // тогда выводим ...<br>
+                        break;<br>
+                    default: // else<br>
+                        alert("Много"); // иначе выводим ...<br>
+                }</dd>
+        </dl>
+    </li>
+    <li>
+        <dl>
+            <dt>Можно ли то же самое выполнить с помощью конструкции if...else</dt>
+            <dd>да</dd>
+        </dl>
+        </li>
+        <li>
+            <dl>
+                <dt> Как будет работать такой код
+            <hr>
+            let a=prompt('Введите а=>0');
+            <br>
+            switch(a)
+            <br>
+            {
+                <br>
+                case 0:
+                <br> 
+                case 1: 
+                <br>
+                alert("Ноль или один");
+                <br>
+                            break;<br>
+                        case 2: // if (a === 2)<br>
+                                alert("Два");<br>
+                            break;<br>
+                        default: <br>
+                            alert("Много");
+            }
+        <hr></dt>
+                <dd>Нет преобразования типа , не будет работать</dd>
+            </dl>
+           
+    </ol>
+    <script>
+        let a=prompt('Введите а=>0');
+        a=parseInt(a);
+        switch(a){
+            case 0: 
+            case 1: 
+            alert("Ноль или один");
+                        break;
+                    case 2: // if (a === 2)
+                            alert("Два");
+                        break;
+                    default: 
+                        alert("Много");
+        }
+    </script>
+</body>
+</html>
