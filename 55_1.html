@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lab-3-5</title>
+</head>
+<body>
+    <script>
+    var n=9;
+    document.write("<table>");
+    for (var tr=1; tr<=n; tr++)
+    {
+        document.write("<tr>");
+        for(var td=1; td<=n; td++)
+        {
+            color=((tr==1)||(td==1))?"#f00":"#fff";
+            if(tr==1)||(td==1)
+            {
+                color="#f00";
+            else {
+                 color="#fff";
+            }
+            document.write('<td bgcolor="'+color+'">');
+            document.write(td*tr);
+            document.write("</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");}
+    </script>
+    </body>
+</html>
