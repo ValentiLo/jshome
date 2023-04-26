@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<P>
+    Задание 45. Найдите и исправьте ошибки в следующем фрагменте кода: <br>
+let number = prompt("Введите число 1 или 2:");<br>
+switch (number) { <br>
+case "1"<br>
+  {<br>
+    document.write("Один");<br>
+  };<br>
+    break;<br>
+case "2"<br>
+  {<br>
+    document.write("Два");<br>
+  };<br>
+  break;<br>
+default<br>
+  {<br>
+    document.write("Вы ввели значение, отличное от 1 и 2");<br>
+  };<br>
+}<br>
+</P>  
+<hr>
+<p>
+</p>
+<script>
+    let number=prompt('Введите число 1 или 2','1');
+        switch (number){
+        case "1":
+            document.write(
+            "один");
+                    break;
+        case "2":
+            document.write("два");
+            break;
+            default:
+                document.write("Вы ввели значение");
+
+        }
+</script>
+    <P>
+<hr>
+    </P>
+    <P>
+        <h3>Вопросы</h3>
+        <ol>
+            <li>
+                <dl>
+                <dt>Какая ошибка была</dt>
+            <dd>.....  ::::</dd>
+            </dl></li>
+        <li>
+            <li>
+                <dl>
+                <dt>для чего нужен оператор switch:</dt>
+            <dd>Оператор switch javascript служит для проверки переменной на множество значений</dd>
+            </dl></li>
+        <li><dl>
+            <dt>что делается в case</dt>
+            <dd>в каждом case проверяется одно из значений, в случае подходящего значения выполняется тот или иной блок операторов, соответствующий данному case.</dd>
+        </dl></li>
+        <li>
+            <dl> <dt>
+    Для чего нужен break
+            </dt>
+                 <dd>Оператор break обязателен после каждого рассмотренного значения переменной (после каждого case); если его не использовать, то будут выведены все, расположенные ниже операторы</dd></dl>
+           
+        </li>
+        <li>
+            <dl>
+                <dt>Синтаксис оператора switch. После каких слов ставится двоеточие</dt>
+                <dd>switch(a) <br>
+                    {<br>
+                        case 0: // if (a === 0)<br>
+                        case 1: // if (a === 0)<br>
+                            alert("Ноль или один"); // тогда выводим ...<br>
+                            break;<br>
+                        case 2: // if (a === 2)<br>
+                                alert("Два"); // тогда выводим ...<br>
+                            break;<br>
+                        default: // else<br>
+                            alert("Много"); // иначе выводим ...<br>
+                    }</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>Можно ли то же самое выполнить с помощью конструкции if...else</dt>
+                <dd>да</dd>
+            </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt> Как будет работать такой код
+                <hr>
+                <pre>
+                    let number=prompt('Введите число 1 или 2','1'); <br>
+                        switch (number){ <br>
+                        case 1: <br>
+                            document.write( <br>
+                            "один"); <br>
+                                    break; <br>
+                        case 2: <br>
+                            document.write("два"); <br>
+                            break; <br>
+                            default: <br>
+                                document.write("Вы ввели значение");
+            
+                        }
+               </pre>
+            </dt>
+                    <dd>Нет преобразования типа , не будет работать</dd>
+                </dl>
+               
+        </ol>
+    </P><hr>
+</body>
+</html>

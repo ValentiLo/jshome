@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        47/ Задание Js 3_8. У пользователя запрашивать число – количество ворон на ветке. В зависимости от введенного числа (не более 10), выводить сообщение:- На ветке сидит 1 ворона.   - На ветке сидит 4 вороны    - На ветке сидит 10 ворон
+Рекомендации:В зависимости от введенного числа, меняется окончание у слова "ворона".Для проверки использовать оператор Switch javascript.Сохраните данную страницу в папке результатов (она пригодится для дальнейших работ)
+    </p>
+    <hr>
+    <script>
+let a=prompt("Сколько ворон сидит на ветке? не больше 10");
+a=parseInt(a);
+switch(a)
+{
+case 1:
+    document.write("На ветке сидит 1 ворона");
+    break;
+case 2:
+document.write("На ветке сидит 2 вороны");
+break;
+case 3:
+document.write("На ветке сидит 3 вороны");
+break;
+case 4:
+document.write("На ветке сидит 4 вороны");
+break;
+case 5:
+document.write("На ветке сидит 5 ворон");
+break;
+case 6:
+document.write("На ветке сидит 6 ворон");
+break;
+case 7:
+document.write("На ветке сидит 7 ворон");
+break;
+case 8:
+document.write("На ветке сидит 8 ворон");
+break;
+case 9:
+document.write("На ветке сидит 9 ворон");
+break;
+default:
+    document.write("Error");
+}
+    </script>
+    <hr>
+
+    <h5>Вопросы</h5>
+    <ol>
+        <li>
+            <dl>
+                <dt>Что выведет код</dt>
+                <dd>
+                    <pre>
+    let a=prompt("Сколько ворон сидит на ветке? не больше 10");
+switch(a)
+{
+case 1:
+    document.write("На ветке сидит 1 ворона");
+    break;
+case 2:
+document.write("На ветке сидит 2 вороны");
+break;
+case 3:
+document.write("На ветке сидит 3 вороны");
+break;
+case 4:
+document.write("На ветке сидит 4 вороны");
+break;
+case 5:
+document.write("На ветке сидит 5 ворон");
+break;
+case 6:
+document.write("На ветке сидит 6 ворон");
+break;
+case 7:
+document.write("На ветке сидит 7 ворон");
+break;
+case 8:
+document.write("На ветке сидит 8 ворон");
+break;
+case 9:
+document.write("На ветке сидит 9 ворон");
+break;
+default:
+    document.write("Error");
+}
+</pre>
+</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>Какая ошибка</dt>
+                <dd> <pre>
+                    let a=prompt("Сколько ворон сидит на ветке? не больше 10");
+switch(a)
+{
+case 1
+    document.write("На ветке сидит 1 ворона");
+    break;
+case 2
+document.write("На ветке сидит 2 вороны");
+break;
+case 3
+document.write("На ветке сидит 3 вороны");
+break
+case 4:
+document.write("На ветке сидит 4 вороны");
+break;
+case 5
+document.write("На ветке сидит 5 ворон");
+break;
+case 6
+document.write("На ветке сидит 6 ворон");
+break;
+case 7
+document.write("На ветке сидит 7 ворон");
+break;
+case 8
+document.write("На ветке сидит 8 ворон");
+break;
+case 9
+document.write("На ветке сидит 9 ворон");
+break;
+default:
+    document.write("Error");
+}</pre>
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>Как усовершенствовать код выше показанный</dt>
+                <dd></dd>
+            </dl>
+        </li>
+    </ol>
+
+
+</body>
+</html>
