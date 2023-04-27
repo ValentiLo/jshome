@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><pre>
+        Цикл с постусловием do..while
+Синтаксис:
+
+do 
+{
+	//..блок операторов..
+}
+while (условие);
+Условие проверяется уже после цикла. Соответственно, операторы в цикле выполнятся хотя бы один раз в любом случае, независимо от условия.
+Пример: Рассмотрим пример использования цикла do while. Самостоятельно выясните, что будет выводиться в диалоговое окно.
+Решение:
+Листинг скрипта:
+let a = 1;
+do
+ {
+	a*=2;
+	if (a==64)
+		continue;
+	alert(a);
+	if (a==256)
+		break;
+}while(a<1000);
+Протестируйте результат в браузере.
+    </pre></p>
+    <script>
+        let a = 1;
+do
+ {
+	a*=2;
+	if (a==64)
+		continue;
+	alert(a);
+	if (a==256)
+		break;
+}while(a<1000);
+    </script>
+</body>
+</html>
