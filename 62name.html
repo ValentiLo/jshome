@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <pre>
+            Задание Js 3_16. Модифицировать программу про ввод имени пользователем:
+Запрашивать имя пользователя до тех пор, пока пользователь действительно введет имя (т.е. поле действительно будет заполнено и не нажата клавиша cancel). Когда имя введено, то выводить "Привет, имя!".
+        </pre>
+    </p>
+    <script>
+     let name="имя";
+     do{
+     name=prompt('Введите имя')
+    }
+     while(!name||name=='null');
+     document.write("Привет"+name)
+    </script>
+</body>
+</html>

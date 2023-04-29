@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5 style="text-align: center;">№63</h5>
+    <P>
+        <pre>
+            Пример: Распечатайте все свойства объекта navigator.
+Объект navigator необходим для получения различной информации о браузере. Эта информация доступна через свойства объекта.
+Решение:
+Создайте код:
+for (let prop in navigator)
+{
+	document.write(prop + "<br>");
+}
+Переменная prop создана для "перебора" всех свойств объекта navigator.
+Протестируйте результат в браузере.
+        </pre>
+    </P>
+   <script>
+    for(let prop in navigator)
+    {
+        document.write(prop+"<br>")
+    }
+   </script> 
+</body>
+</html>

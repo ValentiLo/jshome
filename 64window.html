@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+       <h2>64</h2> 
+    </center>
+    
+    <p>
+        <pre>
+            Задание Js 3_17. Распечатать все свойства объекта window. Выводить каждое свойство с новой строки, чередуя цвет выводимых свойств: черный | синий.
+            Рекомендации:
+Использовать дополнительную переменную для проверки четности.
+Использовать условный оператор If.
+        </pre>
+    </p>
+    <hr>
+    <script>
+     let i =0
+        for(let win in window)
+        {i++
+          if(i%2 ===0) {
+          document.write("<font color='blue'>"+win+"</font>"+'</br>')
+      }    
+       else  {
+         document.write(win+"</br>")}
+     } 
+    </script>
+</body>
+</html>
+    
