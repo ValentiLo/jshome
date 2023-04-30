@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+
+    </h2>
+    <p>
+        <pre>
+            Пример: Написать функцию, которая принимает в качестве аргумента имя пользователя и возвращает в программу сообщение ‘Привет, имя‘. В основной программе выводить данное сообщение методом alert().
+✍ Решение:
+ 
+Объявите функцию sayHello. В скобках аргументов функции укажите аргумент с именем userName:
+function sayHello(userName)
+{
+	...
+}
+В примере функция имеет один аргумент, указанный в скобках, т.е. userName.
+В коде функции с помощью директивы return верните сообщение вместе со значением аргумента функции:
+function sayHello(userName)
+{
+	return "Привет, " + userName;
+}
+В основной программе создайте переменную и присвойте ей значение вызова функции. Выведите значение переменной методом alert():
+let a = sayHello("Вася");
+alert(a);
+Протестируйте результат в браузере.
+Важно: Обратите внимание на разницу между вызовом функции без директивы return и с директивой: в первом случае функция вызывается как оператор, возвращая значение undefined; во втором случаем функция вызывается через присваивание, либо участвуя в выражениях
+        </pre>
+    </p>
+    <hr>
+    <i>Variant 1</i>
+    <pre>
+        function sayHello(userName)
+        {
+            return "Привет, " + userName;
+        }
+        let a = sayHello("Вася");
+        alert(a);
+    </pre>
+    <script>
+        function sayHello(userName)
+{
+	return "Привет, " + userName;
+}
+let a = sayHello("Вася");
+alert(a);
+    </script>
+    <hr>
+    <b>
+        variant 2
+    </b>
+    <pre>
+        function sayhello(username)
+        {
+            return "Привет, " + username;
+        }
+        let b = sayhello(prompt("Введите имя"));
+        alert(b);
+    </pre>
+    <script>
+        function sayhello(username)
+{
+	return "Привет, " + username;
+}
+let b = sayhello(prompt("Введите имя"));
+alert(b);
+    </script>
+</body>
+</html>

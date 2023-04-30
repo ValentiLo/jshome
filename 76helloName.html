@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3></h3>
+    <p>
+        <pre>
+            Пример: Создать скрипт, выводящий в модальное окно сообщение ‘Привет, имя‘, где имя передается из программы в качестве аргумента функции.
+            пример функции с аргументами
+            ✍ Решение:
+             
+            Объявите функцию sayHello. В скобках аргументов функции укажите аргумент с именем userName:
+            function sayHello(userName)
+            {
+            ...
+            }
+            В примере функция имеет один аргумент, указанный в скобках, т.е. userName.
+            В коде функции с помощью метода alert() выводите сообщение вместе со значением аргумента функции:
+            function sayHello(userName)
+            {
+                alert("Привет, " + userName);
+            }
+            В основной программе дважды вызовите функцию с разными значениями:
+            ...
+            sayHello("Вася");
+            sayHello("Петя");
+            Переменная userName примет то значение, которое указано в скобках при вызове функции — «Вася» и «Петя». Значит, при первом вызове функция выведет в диалоговое окно Привет, Вася, при втором — Привет, Петя.
+            Протестируйте результат в браузере. 
+        </pre>
+    </p>
+    <h2>variant 1</h2>
+    <pre>
+        function sayHello(userName)
+            {
+                alert("Привет, " + userName);
+            };
+            sayHello("Вася");
+            sayHello("Петя");
+    </pre>
+    <script>
+        function sayHello(userName)
+            {
+                alert("Привет, " + userName);
+            };
+            sayHello("Вася");
+            sayHello("Петя");
+    </script>
+    <hr>
+    <h2>variant 2</h2>
+    <pre>
+        function sayHello()
+            {
+                userName=prompt('Введите имя')
+                alert("Привет, " + userName);
+            };
+            sayHello();
+    </pre>
+    <script>
+        function sayHello()
+            {
+                userName=prompt('Введите имя')
+                alert("Привет, " + userName);
+            };
+            sayHello();
+           
+    </script>
+</body>
+</html>

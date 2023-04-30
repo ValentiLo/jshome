@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>80</h2>
+    <p>
+        <pre>Обычное использование javascript функции:
+
+            function sum(arg1,arg2)
+            {
+                let a=arg1+arg2;
+                return a;
+            }
+            let b=sum(1,2);
+            alert(b);</pre>
+    </p>
+    <script>
+        function sum(arg1,arg2)
+{
+	let a=arg1+arg2;
+	return a;
+}
+let b=sum(1,2);
+alert(b);
+    </script>
+    <hr>
+    <p>
+        <h3>Вариант 1</h3>
+        <pre>
+            function sum(arg1,arg2)
+            {
+                let a=arg1+arg2;
+                return a;
+            }
+            let b=sum(1,2);
+            alert(b);
+        </pre>
+    </p>
+    <hr>
+    <p>
+        <h3>Вариант 2</h3>
+        <pre>
+            function sum1(arg3,arg4)
+            {
+                let c=arg3+arg4;
+                return c;
+            }
+            let f=prompt('Введите первое число');
+            let g=prompt('Введите второе число');
+            f=parseInt(f);
+            g=parseInt(g);
+            let d=sum(f,g);
+            alert(d);
+        </pre>
+    </p>
+    <script>
+         function sum1(arg3,arg4)
+{
+	let c=arg3+arg4;
+	return c;
+}
+let f=prompt('Введите первое число');
+let g=prompt('Введите второе число');
+f=parseInt(f);
+g=parseInt(g);
+let d=sum(f,g);
+alert(d);
+    </script>
+    <h2>
+        Функция как составная часть выражения:
+    </h2>
+    <p>
+        <pre>
+            Функция как составная часть выражения:
+
+function sum(arg1,arg2)
+{
+	let a=arg1+arg2;
+	return a;
+}
+let b=sum(1,2);
+alert(b);
+ 
+function add()
+{
+	let c=1+sum(1,2);
+	return c;
+}
+let d=add();
+alert(d);
+        </pre>
+    </p>
+    <script>
+        function sum3(arg5,arg6)
+        {
+            let k=arg5+arg6;
+            return k;
+        }
+        let l=sum(1,2);
+        alert(l);
+        function add()
+        {
+let m=1+sum(1,2);
+return m
+        }
+        let n=add();
+        alert(n);
+    </script>
+</body>
+</html>

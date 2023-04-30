@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>79</h2>
+    <p>
+        <pre>
+            Задание js4_5. Необходимо запросить у пользователя ввести возраст (метод prompt()). 
+            Вызывать функцию, которая выводит диалоговое окно с сообщением ‘Привет, малыш!’, 
+            если возраст менее 18, и ‘Здравствуйте, юноша!’, если возраст более или равен 18.
+        </pre>
+    </p>
+    <hr>
+    <script>
+function vozrust () {
+    let age=prompt('Введите ваш возраст');
+    age=parseInt(age);
+    if (age<18)
+        alert("Привет, малыш!")
+    else if (age>=18)
+    alert("Привет, юноша")
+        else
+        alert('Укажите ваш возраст')
+}
+vozrust()
+    </script>
+    <b>
+        <pre>
+            function vozrust () {
+                let age=prompt('Введите ваш возраст');
+                age=parseInt(age);
+                if (age<18)
+                    alert("Привет, малыш!")
+                else if (age>=18)
+                alert("Привет, юноша")
+                    else
+                    alert('Укажите ваш возраст')
+        </pre>
+    </b>
+</body>
+</html>

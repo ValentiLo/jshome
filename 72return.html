@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>72 return.</h2>
+    <p>
+        <pre>
+            Пример: Рассмотрите фрагмент кода и поясните, что выполняется в данном скрипте:
+        
+            function sayHello()
+            {
+                alert("1");
+                return "привет!";
+                alert("2");
+            }
+            let a=sayHello();
+            alert(a);
+            ✍ Решение:
+             
+            
+            Рассмотрите работу функции:
+            function sayHello()
+            {
+                alert("1");// выполнится
+                return "привет!";// завершаем выполнение функции
+                alert("2");// не выполнится, т.к. после return
+            }
+           <i><b> Как видно из примера, после return функция действительно завершает свою работу. Поэтому оператор alert("2") выполняться уже не будет.
+            </b></i>Проанализируйте вызов функции:
+            let a=sayHello();
+            alert(a);
+            Вызов функции происходит через присваивание. Вызов в данном примере можно также организовать так: alert(sayHello()); , но это не рекомендуемый вариант. 
+        
+        <hr><b> Важно: Таким образом, директива return указывает на возвращаемое значение функции, которое будет передано переменной при следующей форме вызова:
+        переменная = имя_функции();
+        Важно: return может использоваться без значения, чтобы прекратить выполнение функции и выйти из нее:
+        </b>function checkName() {
+        let name=prompt('введите имя')
+        if (!name) {
+            return; // если имя не заполнено, то выходим из функции
+         }}
+         <hr>
+    </pre>
+    </p>
+    <script>
+      function sayHello(){
+        alert("1");
+        return"Привет!";
+        alert("2");
+    }
+    let a=sayHello();
+    alert(a);  
+    </script>
+</body>
+</html>
