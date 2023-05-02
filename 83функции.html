@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+ Варианты выражений:
+    </h3>
+    <p>
+        <pre>
+⇒ Вызов функции как часть выражения:
+
+S3 = 0.5 * plRectangle(a, b);
+⇒ Вызов функции в логических выражениях:
+
+if (plRectangle(a, b) > plRectangle(c, d))
+alert("Первый прямоугольник больше второго");
+⇒ Вызов javascript функции в качестве параметра другой функции:
+let х = "25рх";
+let у = 12;
+let S = plRectangle(parselnt(x), у); 
+        </pre>
+    </p>
+    <script>
+        function plRectangle(width, height){
+        let S = width * height;
+        return S
+    }
+    let a=prompt('Введите ширину первого прямоугольника')
+    let b=prompt('Введите длину второго прямоугольника') 
+    let c=a*b
+    let d=prompt('Введите ширину второго прямоугольника')
+    let f=prompt('Введите длину второго прямоугольника')
+    if (plRectangle(a, b) > plRectangle(c, d))
+alert("Первый прямоугольник больше второго")
+else
+alert('Второй прямоугольник больше первого');
+    document.write('Площадь прямоугольника ')
+   document.write(plRectangle(a,b)+'<br/>') 
+   document.write('Площадь прямоугольника, ширина которого в 2 раза меньше исходного ')
+       // S3 = 
+        document.write(0.5 * plRectangle(a, b)) 
+    </script>
+    <script>
+        function plRectangle(width, height){
+        let S = width * height;
+        return S
+    }
+        let x ="25px";
+        x=parseInt(x);
+let y = 12;
+//let S = ;
+document.write(plRectangle(parselnt(x), y))
+    </script>
+
+</body>
+</html>
