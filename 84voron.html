@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3>
+
+   </h3>
+   <pre>
+    Задание js4_7. Используйте функцию для модернизации примера с окончанием слова про количество ворон. 
+    Откройте файл с выполненным заданием про ворон. Необходимо вызывать функцию с параметром – количество ворон.
+   </pre> 
+   <script>
+    function voron(){
+        let a=prompt("Сколько ворон сидит на ветке? не больше 10");
+    a=parseInt(a);
+    switch(a)
+    {
+    case 1:
+        document.write(`На ветке сидит ${a} ворона`);
+        break;
+    case 2:
+    case 3:
+    case 4:
+    document.write(`На ветке сидит ${a} вороны`);
+    break;
+    case 5:
+    case 6:  
+    case 7: 
+    case 8:
+    case 9:
+    case 10:
+    document.write(`На ветке сидит ${a} ворон`);
+    break;
+    default:
+        document.write("Error");
+    } 
+    }
+   voron()
+        </script>
+</body>
+</html>
