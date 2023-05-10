@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        94. Пример: Используя функцию, необходимо вычислять возведение числа в степень. Выполнить задание, используя цикл for
+Показать решение:
+	let chislo,stepen;
+function degree(chislo,stepen) { 
+        for(let result = 1; stepen > 0; stepen--) {
+                result *= chislo; 
+        } 
+return  result;
+} 
+document.write(degree(2,4)); // выводит 16
+
+
+    </pre>
+    <script>
+        let chislo, stepen;
+        function degree(chislo, stepen){
+            let result=1
+            for (let i=stepen; stepen>0; stepen--){
+                result=result*chislo
+            }
+            return result
+        }
+        document.write(degree(2,4));
+        alert(degree(2,4))
+    </script>
+</body>
+</html>
+<!-- let stepen = prompt('Укажи степень');
+stepen = Number(stepen);
+let result = 1;
+for (let i = 1; i <= stepen; i++) {  
+  result *= 2;
+}
+alert(result); -->

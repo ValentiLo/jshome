@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        91. 4. function Plrectangle(width, height){
+            S = width * height; //глобальная переменная
+            return S
+    }
+    z = Plrectangle(2, 3);
+    S=2; // изменяем глобальную переменную
+    alert(z);
+    alert (S);
+     Пример: Значение z равно 6, а значение S равно 2, то есть значению измененной глобальной переменной, определенной во внешней программе
+    </pre>
+    <script>
+        function Plrectangle(width, height){
+            S = width * height
+            return S
+        }
+       let S = 2;
+        z = Plrectangle(2,3);
+        alert(z);
+        alert(S);
+      
+    </script>
+</body>
+</html>

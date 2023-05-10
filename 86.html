@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        86. let a = 1;
+        function ...
+— могут быть причиной сложно находимых ошибок;
+Локальные переменные— создаются внутри фрагментов кода и не видны извне;
+        for (let i=1;i<5;i++){  // i - локальная
+           ...
+        }
+         if (x<5) {
+            let a=5; // a - локальная
+         }
+— явно объявляются в теле javascript функции;
+        function findA(){  
+           let a = 2*2 // a - локальная
+        }
+— аргументы (параметры) функции — всегда локальные переменные;— лучше использовать локальные переменные, так как доступ к ним больше контролируется.
+
+    </pre>
+    <script>
+         let a = 1
+       function loc(){
+        for(let i = 1; i < 5; i++){
+
+        }if (x < 5){
+            let a = 5
+        }
+       } 
+       function findA(){
+        let a = 2 * 2
+        document.write(a)
+       }
+    </script>
+</body>
+</html>

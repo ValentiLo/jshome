@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        87. Задание js4_9. Дополните код согласно заданию:
+Создать 2 переменные глобальной и локальной области видимости (то есть внутри функции func) с именами: global, local.
+Переменной global присвоить текст “Привет, ”, а local — “Мир”. Используя переменные, выведите их значения дважды: в основной программе и в теле функции.function func() {
+}
+func();
+ОБЛАСТЬ ВИДИМОСТИ ПЕРЕМЕННЫХ
+Рассмотрим конкретные примеры области видимости переменных в javascript при использовании глобальных и локальных переменных.
+    </pre>
+
+<script>
+    let a = "Привет"
+        function func(){
+            let b = "world"
+            alert(b)
+        }
+        alert(a)
+        func()
+</script>
+</body>
+</html>

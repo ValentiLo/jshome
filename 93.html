@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        93. Задание js4_10. Что выведет на экран следующий код?
+let variable = "Глобальная переменная";
+function f() {
+  let variable = "Локальная переменная";
+  document.write(variable + "<br/>");
+}
+f();
+document.write(variable);
+
+    </pre>
+    <script>
+        let variable = "глобальная переменная"
+        function f(){
+         let variable = "локальная переменная"
+         document.write(variable + "<br/>")
+        } 
+        f()
+        document.write(variable)
+     </script>
+</body>
+</html>

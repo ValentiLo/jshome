@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        92.    5. function plRectangle(width, height)
+{
+let S = width * height;
+let x = 17;
+return S
+}
+z = plRectangle(2,3);
+alert(z);
+alert(x); // не определена во внешней программе
+alert (S); // не определена во внешней программе
+Пример: Значение z равно 6; переменная S во внешней программе не определена; переменная х во внешней программе не определена
+
+    </pre>
+    <script>
+        function plRectangle(width, height){
+         let S = width * height
+         let x = 17
+         return S
+        }
+        z = plRectangle(2,3)
+        alert(z)
+        alert(x)
+        alert(S) 
+     </script>
+</body>
+</html>

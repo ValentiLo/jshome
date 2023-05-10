@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        95. Пример: Выполнить возведение числа в степень через рекурсию. Оба значения запрашивать у пользователя. Выдавать результат в виде:2 в степени 4 = 16
+ Решение:
+Объявите глобальные переменные для числа и степени и запросите их:Создайте функцию с двумя аргументами для числа и степени:Поскольку известно, что любое число в степени 0 равно единице, то сделаем это начальным условием. То есть если степень = 0, то функция возвращает 1:Создадим рекуррентное правило: если степень не равна 0, то нужно число умножить на число в степени на единицу меньше (вызов функции со степенью на единицу меньше):Вызовите функцию, оформив вывод:Протестируйте результат в браузере.
+let chislo,stepen;
+chislo = parseInt(prompt('число: '));
+stepen = parseInt(prompt('степень: '));function degree(chislo,stepen) { 
+}function degree(chislo,stepen) { 
+        if(stepen) { 
+…
+        } 
+        return 1; // если степень равна нулю то возвращаем 1
+}function degree(chislo,stepen) { 
+        if(stepen) { 
+                return chislo*degree(chislo,stepen-1); 
+        } 
+        return 1; 
+}document.write(chislo,' в степени ', stepen, ' = ', degree(chislo,stepen));
+    </pre>
+    <script>
+        let chislo = +prompt("chislo")
+        let stepen = +prompt("stepen")
+        function degree(chislo, stepen){
+            if(stepen){
+                return chislo * degree(chislo,stepen-1)
+            }
+            return 1
+        }
+        document.write(chislo, 'in stepen', stepen, '=', degree(chislo,stepen))
+    </script>
+</body>
+</html>
