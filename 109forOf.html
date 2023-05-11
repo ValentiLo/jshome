@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        109. Использование цикла for of для перебора элементов массива (результат такой же):
+let mas=new Array(1,25,'Привет');
+ 
+function showElement(){
+        for(let i of mas){
+                document.writeln(i);
+        }
+}
+showElement();
+Нужно иметь в виду, что цикл for in выполняет перебор всех свойств объекта, а не только индексированных.
+В браузере имеются так называемые «псевдомассивы» – объекты, которые выглядят, как массив. То есть, у них есть свойство length и индексы, но они также могут иметь дополнительные свойства и методы. Однако цикл for in выведет и их.
+Цикл for in во много раз медленнее, чем for of.
+
+    </pre>
+    <script>
+        let mas=new Array(1,25,'Привет');
+ 
+ function showElement(){
+         for(let i of mas){
+                 document.writeln(i);
+         }
+ }
+ showElement()
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Свойства массива (объекта Array) в javaScript
+        Массив – предопределенный объект. Доступ и обращение к элементам массива осуществляется при помощи точечной нотации (через символ «.«):
+        Название_объекта.свойство_объекта
+        Название_объекта.метод_объекта(параметры)
+        Пример:
+        mas.length // обращение к свойству length
+        mas.sort() // вызов метода sort
+        115. Пример: Вывести элементы массива на экран, в качестве конечного значения счетчика цикла использовать свойство массивов length
+         Решение:
+        for (let i = 0; i<arr.length;i++){
+                alert(arr[i]);
+        }
+        alert(arr.length);
+        
+    </pre>
+    <script>
+        let earth = new Array(4); /* массив-объект из 4-х элементов*/
+earth[0] = "Планета";
+earth[1] = "24 часа";
+earth[2] = 6378;
+earth[3] = 365.25;
+document.write(earth)
+for (let i = 0; i<earth.length;i++){
+        alert(earth[i]);
+}
+alert(earth.length);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                let week = new Array();
+week[0] = "пн";
+week[1] = "вт";
+week[2] = "ср";
+week[3] = "чт";
+week[4] = "пт";
+week[5] = "сб";
+week[6] = "вс";
+        function contains(week, elem) {
+    for (var i = 0; i < week.length; i++) {
+        if (week[i] === elem) {
+            return true;
+        }
+    }
+    return false;
+}
+contains("пн")
+    </script>
+</body>
+</html>

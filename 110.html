@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        110. Задание array 5_1. Создать два массива: countries – с названием стран, и population – с населением этих стран. Вывести название страны и ее население (использовать метод document.write).Комментарии к выполнению:Вывод элементов массива оформить в виде функции.Сначала выполнить задание с помощью цикла for с счетчиком, затем — с помощью цикла for in.
+
+    </pre>
+    <script>
+        let countries=new Array('ROSSIA', 'PORT', 'BEL')
+        let population=new Array('russian', 'portugalian', 'belorus')
+          function showElement(){for(i=0;i<3;i++)
+                  {document.writeln(countries[i])
+              for(let j in population){
+                if (i==j)
+                      document.writeln(population[j]+"<br>");
+              
+                    }}
+      } 
+      showElement()
+
+    </script>
+</body>
+</html>

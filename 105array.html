@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        105. Пример: Создать массив arr. Присвоить значение трем элементам созданного массива. С помощью диалогового окна alert() вывести значение элемента массива с индексом 2. Вывести количество элементов массива.
+ Решение:
+let arr = new Array();
+arr[0] = "element1";
+arr[1] = "element2";
+arr[2] = "element3";
+alert(arr[2]);
+alert("Число элементов" + arr.length);
+В javascript длина массива — свойство length.
+Javascript создание массива
+Создание элементов массива возможно несколькими способами:
+1.  let earth = new Array(4); /* массив-объект из 4-х элементов*/
+earth[0] = "Планета";
+earth[1] = "24 часа";
+earth[2] = 6378;
+earth[3] = 365.25;
+2.    let earth = new Array("Планета", "24 часа", 6378, 365.25);
+3.    let earth = new Array(); // пустой массив-объект
+       earth.xtype = "Планета";
+       earth.xday = "24 часа";
+       earth.radius = 6378;
+       earth.period = 365.25;
+4.          // пустой массив не объект
+             let country = [];
+              // массив не объект со значениями
+             let country = ["Россия", "Белоруссия", "Казахстан"];
+
+    </pre>
+    <script>
+        let arr = new Array();
+arr[0] = "element1";
+arr[1] = "element2";
+arr[2] = "element3";
+alert(arr[2]);
+alert("Число элементов" + arr.length);
+    </script>
+    <h4>Создание элементов массива возможно несколькими способами:</h4>
+    <pre>
+        let earth = new Array(4); /* массив-объект из 4-х элементов*/
+earth[0] = "Планета";
+earth[1] = "24 часа";
+earth[2] = 6378;
+earth[3] = 365.25;
+document.write(earth)
+    </pre>
+    <script>
+        let earth = new Array(4); /* массив-объект из 4-х элементов*/
+earth[0] = "Планета";
+earth[1] = "24 часа";
+earth[2] = 6378;
+earth[3] = 365.25;
+document.write(earth)
+    </script>
+    <h4>СПОСОБ 2</h4>
+    <pre>let earth = new Array("Планета", "24 часа", 6378, 365.25)</pre>
+    <script>
+        let earth2 = new Array("Планета", "24 часа", 6378, 365.25);
+        document.write(earth2)
+    </script>
+    <h4>СПОСОБ 3</h4>
+    <pre>
+        let earth = new Array(); // пустой массив-объект
+       earth.xtype = "Планета";
+       earth.xday = "24 часа";
+       earth.radius = 6378;
+       earth.period = 365.25;
+    </pre>
+    <script>
+        let earth1 = new Array(); // пустой массив-объект
+       earth1.xtype = "Планета";
+       earth1.xday = "24 часа";
+       earth1.radius = 6378;
+       earth1.period = 365.25;
+       document.write(earth1)
+    </script>
+<h4>СПОСОБ  4</h4>
+<pre>
+    // пустой массив не объект
+    let country = [];
+     // массив не объект со значениями
+    let country = ["Россия", "Белоруссия", "Казахстан"];
+</pre>
+<script>
+     // пустой массив не объект
+     let country = [];
+              // массив не объект со значениями
+              country = ["Россия", "Белоруссия", "Казахстан"];
+document.write(country)
+</script>
+</body>
+</html>

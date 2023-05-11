@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Обращение или доступ к элементам массива в javaScript происходит так:
+        106. let mas=new Array(1,25,'Привет');
+        mas[0]='Пока';
+        mas[1]=35;
+        При инициализации массива элемент mas[0] был равен 1. Затем мы изменили его значение на ‘Пока’. Значение элемента массива mas[1] было изменено с 25 на 35.document.write(mas)
+        Вывод элементов массива
+        При выводе значений массива в документ с помощью метода write, его элементы выводятся через запятую:
+        let mas=new Array(1,25,'Привет');
+        document.write(mas)
+        Результат:           1,25,Привет
+         
+    </pre>
+    <script>
+ let mas=new Array(1,25,'Привет');
+mas[0]='Пока';
+mas[1]=35;
+document.write(mas)
+//let mas=new Array(1,25,'Привет');
+//document.write(mas)
+    </script>
+</body>
+</html>

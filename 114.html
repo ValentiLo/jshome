@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        114. Задание array 5_3. Создать массив из трех элементов, значения элементов запрашивать у пользователя. Удалить второй по счету элемент, после чего вывести элементы массива на экран, каждый элемент с новой строки
+    </pre>
+    <script>
+        let ask = new Array(4); /* массив-объект из 4-х элементов*/
+ask[0] = prompt('Введите число');
+ask[1] = prompt('Введите число');
+ask[2] = prompt('Введите число');
+ask[3] = prompt('Введите число');
+delete ask[2];
+document.writeln(ask+"<br>");
+
+    </script>
+</body>
+</html>
