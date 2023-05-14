@@ -8,19 +8,14 @@
 </head>
 <body>
     <script>
-        let arr = new Array();
-arr[0] = "element1";
-arr[1] = "element2";
-arr[2] = "element3";
-        function contains(arr, obj) {
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] === obj) {
-            return true;
-        }
-    }
-    return false;
+        function include(arr, obj) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] == obj) return true;
+  }
 }
-contains(arr,element1)
+
+document.write(include([1, 2, 3, 4], 3)); // true
+document.write(include([1, 2, 3, 4], 6)); // undefined
     </script>
 </body>
 </html>

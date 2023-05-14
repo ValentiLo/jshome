@@ -7,65 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    <pre>
-        Поиск элемента в массиве
-В javascript для поиска элемента в массиве можно создать пользовательскую функцию:
-let arr = new Array();
+    <script>
+        let arr = new Array();
 arr[0] = "element1";
 arr[1] = "element2";
 arr[2] = "element3";
+ 
 function findValue(theValue){
-        for (let i = 0; i<arr.length;i++){
-                if(arr[i] == theValue)
-                        break; // если нашли - выход из цикла 
-        }
-        if (i<arr.length) // если не нашли, то i=arr.length
-                return i //если нашли - возвращаем индекс
-        else  
-                return false; // если не нашли - возвращаем false
+	for (let i = 0; i<arr.length;i++){
+		if(arr[i] == theValue)
+			break; // если нашли - выход из цикла 
+	}
+	if (i<arr.length) // если не нашли, то i=arr.length
+		return i //если нашли - возвращаем индекс
+	else  
+		return false; // если не нашли - возвращаем false
+ 
 }
+ 
 let elem=findValue("element2");
 if (elem) 
      alert ("элемент найден, его индекс="+elem)
 else 
      alert("элемент не найден");
-В примере функция, организованная для поиска элемента массива, имеет один аргумент (theValue) — значение искомого элемента массива. В случае нахождения элемента функция возвращает индекс найденного элемента, если элемент не найден — функция возвратит false.
-116. Задание array 5_4. Создать массив, элементами которого являются названия дней недели (сокращенная запись названий). Выводить номер дня недели (номер элемента массива), содержащего введенное пользователем название дня недели (использовать функцию с параметром, которая возвращает значение номера)
-.
-Пример вывода:Введите день недели: пн вт ср чт пт сб вс
->> вт
-вт - 1-й день недели, начиная с нуля  
-
-    </pre>
-    <script>
-        let week = new Array();
-week[0] = "пн";
-week[1] = "вт";
-week[2] = "ср";
-week[3] = "чт";
-week[4] = "пт";
-week[5] = "сб";
-week[6] = "вс";
-document.write(week)
-let theValue=prompt('Введите день недели')
-function findValue(theValue){
-        for (let i = 0; i<week.length;i++){
-                if(week[i] == theValue)
-                        break; // если нашли - выход из цикла 
-        }
-        if (i<week.length) // если не нашли, то i=arr.length
-                return i //если нашли - возвращаем индекс
-        else  
-                return false; // если не нашли - возвращаем false
-}
-document.write(findValue(theValue))
-let elem=findValue("пн");
-if (elem) 
-     alert ("элемент найден, его индекс="+elem)
-else 
-     alert("элемент не найден");
-     findValue("пн")
-
+     document.write(elem())
+     elem(element1)
     </script>
 </body>
 </html>
