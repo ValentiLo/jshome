@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isMyFavoriteHobby(element, index, array) {
+  const myFavoriteHobby = 'смотреть сериальчики'
+
+  return element === myFavoriteHobby
+}
+
+const currentToDoList = [
+  'смотреть сериальчики',
+  'читать книгу',
+  'пить кофе',
+  'гладить кота',
+  'гулять',
+]
+const tomorrowToDoList = [
+  'читать книгу',
+  'пить кофе',
+  'гладить кота',
+  'гулять',
+]
+
+document.write(currentToDoList.find(isMyFavoriteHobby))
+// 'смотреть сериальчики'
+document.write("<br>")
+document.write(tomorrowToDoList.find(isMyFavoriteHobby))
+// undefined, не найдено
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function include(arr, obj) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] == obj) return true;
+  }
+}
+
+document.write(include([1, 2, 3, 4], 3)); // true
+document.write(include([1, 2, 3, 4], 6)); // undefined
+    </script>
+        <script>
+            let week = new Array();
+week[0] = "пн";
+week[1] = "вт";
+week[2] = "ср";
+week[3] = "чт";
+week[4] = "пт";
+week[5] = "сб";
+week[6] = "вс";
+document.write("<br>"+week)
+document.write("<br>")
+        let day=prompt('day? mon, tus, wen, ther,fr,sat,sun')
+            function findValue(arr, day) {
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == day) 
+        document.write("<br>"+"элемент найден, его индекс="+"<br>"+i);
+        else 
+   document.write("<br>"+"элемент не найден");
+      }
+      if (i<arr.length) // если не нашли, то i=arr.length
+                document.write(i)  //если нашли - возвращаем индекс
+        else  
+                return false; // если не нашли - возвращаем false
+}
+    document.write(findValue(week, day)); // true
+    document.write("<br>")
+    let elem=findValue(arr,day);
+if (elem==day) 
+    alert (`элемент найден, его индекс=${elem}`)
+else 
+   alert("элемент не найден");
+   elem;
+     document.write(elem)
+        </script>
+</body>
+</html>
