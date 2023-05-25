@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><p>
+    <pre>
+        concat
+        Метод arr.concat создаёт новый массив, в который копирует данные из других массивов и дополнительные значения.
+        
+        Синтаксис:
+        
+        arr.concat(arg1, arg2...)
+        Он принимает любое количество аргументов, которые могут быть как массивами, так и простыми значениями.
+        
+        В результате – новый массив, включающий в себя элементы из arr, затем arg1, arg2 и так далее.
+        
+        Если аргумент argN – массив, то копируются все его элементы. Иначе копируется сам аргумент.
+        
+        Например:
+        
+        let arr = [1, 2];
+        
+        // создать массив из: arr и [3,4]
+        alert( arr.concat([3, 4]) ); // 1,2,3,4
+        
+        // создать массив из: arr и [3,4] и [5,6]
+        alert( arr.concat([3, 4], [5, 6]) ); // 1,2,3,4,5,6
+        
+        // создать массив из: arr и [3,4], потом добавить значения 5 и 6
+        alert( arr.concat([3, 4], 5, 6) ); // 1,2,3,4,5,6
+        Обычно он копирует только элементы из массивов. Другие объекты, даже если они выглядят как массивы, добавляются как есть:
+        
+        let arr = [1, 2];
+        
+        let arrayLike = {
+          0: "что-то",
+          length: 1
+        };
+        
+        alert( arr.concat(arrayLike) ); // 1,2,[object Object]
+        …Но если массивоподобный объект имеет специальное свойство Symbol.isConcatSpreadable, то он обрабатывается как массив, с помощью concat: вместо него добавляются его элементы:
+        
+        let arr = [1, 2];
+        
+        let arrayLike = {
+          0: "что-то",
+          1: "ещё",
+          [Symbol.isConcatSpreadable]: true,
+          length: 2
+        };
+        
+        alert( arr.concat(arrayLike) ); // 1,2,что-то,ещё
+</pre>
+
+</p>
+    <pre>
+        Часто используемым методом в javascript array является concat().
+Метод javaScript concat() — конкатенация массивов, объединяет два массива в третий массив, т.е. формирует и возвращает объединенный массив, содержащий все элементы исходного массива и значения всех аргументов, переданных методу
+массив1.concat(массив2)
+117. Рассмотрим пример использования метода concat
+let a1= new Array(1, 2, "Звезда");
+let а2 = new Array("a", "б", "в", "г");
+let аЗ = a1.concat(a2); 
+/* результат - массив с элементами: 1, 2, "Звезда", "а", "б", "в", "г" */
+
+    </pre>
+    <script>
+        let a1=new Array(1,2,"звезда");
+        let a2=new Array("a","b","c","d");
+        let a3=a1.concat(a2);
+        let a4=a3.concat(a2)
+        document.write(a3);
+        document.write("<hr>")
+        document.write("<br>")
+        document.write(a4)
+    </script>
+</body>
+</html>
