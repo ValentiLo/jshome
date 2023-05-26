@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Для числового сравнения, вместо строкового, функция сравнения может просто вычитать b из a. Следующий пример будет сортировать массив по возрастанию:
+131. let numbers = [4, 2, 5, 1, 3];
+numbers.sort(function(a, b) {
+  return a – b;  });
+document.write(numbers); // [1, 2, 3, 4, 5]
+    </pre>
+    <script>
+        let numbers = [4, 2, 5, 1, 3];
+numbers.sort(function(a, b) {
+  return a - b;  });
+document.write(numbers); // [1, 2, 3, 4, 5]
+    </script>
+</body>
+</html>

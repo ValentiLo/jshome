@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Метод javaScript sort([compareFunction]) — сортирует (упорядочивает) элементы массива (элементы сортируются путём преобразования их в строки и сравнения строк в порядке следования кодовых точек Unicode). Необязательный параметр compareFunction указывает функцию, определяющую порядок сортировки, может пригодиться при сортировке целочисленного массива (см. ниже).
+имя_массива.sort()
+130. Пример использования метода sort():
+let arr = [1, 2, 16];
+arr.sort();
+document.write(arr.join("<p>"));
+/* Выведет на экран:  1   16    2 */
+Для числового сравнения, вместо строкового, функция сравнения может просто вычитать b из a. 
+    </pre>
+  <script>
+let arr = [1, 2, 16];
+arr.sort();
+document.write(arr.join("<p>"));
+  </script>  
+</body>
+</html>
