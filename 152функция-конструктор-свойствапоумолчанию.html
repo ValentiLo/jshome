@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        146. Функция-конструктор позволяет наделить объект свойствами по умолчанию. Эти свойства будут у каждого создаваемого экземпляра объекта
+        function Student(name, phone) {
+           this.name=name;
+           this.phone="22-22-22"; // свойство по умолчанию!
+        }
+        let ivanov = new Student("Ivan","33-33-33");
+        alert (ivanov.name); // выдаст "Ivan"
+        alert (ivanov.phone); // выдаст "22-22-22"
+        ivanov.phone="33-33-33"; //меняем св-во по умолчанию
+        alert (ivanov.phone); // выдаст "33-33-33"         
+    </pre>
+    <script>
+        function Student(name, phone) {
+           this.name=name;
+           this.phone="22-22-22"; // свойство по умолчанию!
+        }
+        let ivanov = new Student("Ivan","33-33-33");
+        alert (ivanov.name); // выдаст "Ivan"
+        alert (ivanov.phone); // выдаст "22-22-22"
+        ivanov.phone="33-33-33"; //меняем св-во по умолчанию
+        alert (ivanov.phone); // выдаст "33-33-33"  
+    </script>
+</body>
+</html>

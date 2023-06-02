@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Цикл «для каждого» for in при работе с объектами в javascript
+Совсем немного об этой конструкции уже было сказано в одном из предыдущих уроков.
+Цикл for in в javascript предназначен для прохода по массивам, коллекциям и объектам.
+143. Рассмотрим пример использования for in:
+let myBrowser = new Object();
+myBrowser.name= "Microsoft Internet Explorer";
+myBrowser["version"]= "9.0";
+for (let a in myBrowser)
+{
+        alert(a); // Перебирает свойства объекта myBrowser. Выдаст name, version
+        alert(myBrowser[a]); // Выдаст значения свойств
+}
+
+    </pre>
+    <script>
+        let myBrowser = new Object();
+myBrowser.name= "Microsoft Internet Explorer";
+myBrowser["version"]= "9.0";
+for (let a in myBrowser)
+{
+        alert(a); // Перебирает свойства объекта myBrowser. Выдаст name, version
+        alert(myBrowser[a]); // Выдаст значения свойств
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        140. Пример: Создать два объекта-коллекции (car и moto) со свойствами color и brand (у объекта moto еще свойство horse power). Вывести значение свойства color у объекта car и свойства brand у объекта moto.
+ Решение:
+let car = new Object();
+car.color = "Белый";
+car.maxSpeed=220;
+car.brand = "Nissan";
+document.write("У машины цвет: " + car.color);
+let moto = {
+        color: "Синий",
+        "horse power": 130, // если свойство из двух слов - используем кавычки
+        brand: "Yamaha"
+        };
+ document.write("У мотоцикла производитель: " + moto.brand);
+
+    </pre>
+    <script>let car = new Object();
+        car.color = "Белый";
+        car.maxSpeed=220;
+        car.brand = "Nissan";
+        document.write("У машины цвет: " + car.color+"<br>");
+        let moto = {
+                color: "Синий",
+                "horse power": 130, // если свойство из двух слов - используем кавычки
+                brand: "Yamaha"
+                };
+         document.write("У мотоцикла производитель: " + moto.brand);</script>
+</body>
+</html>

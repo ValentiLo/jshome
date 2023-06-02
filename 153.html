@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Добавление свойств к классу объектов
+Значение свойства можно добавить для:
+конкретного экземпляра объекта;
+целого класса объектов
+Добавление свойств к конкретному (экземпляру) объекту:
+имя_объекта.имя_свойства = значение
+function Student(biology, phisics) {
+  this.biology=biology;
+  this.phisics=phisics; 
+}
+let ivanov = new Student();
+ivanov.biology = "отлично";
+Важно: В примере свойство задается для конкретного объекта, а не для класса объектов!
+Добавление свойств к классу объектов:
+имя_класса.prototype.имя_свойства=значение
+Student.prototype.biology = "отлично";
+Важно: В примере свойство (по умолчанию) задается для класса объектов! Это сделано при помощи prototype ; прототип — объект, определяющий структуру
+Student.prototype.email="jb@gmail.com";
+alert(ivanov.email); // выдаст "jb@gmail.com"
+Пример: Пример вывода всех свойств объекта со значениями
+let summerTour={
+        turkey : 2000,
+        spain : 3000,
+        egypt : 1000
+};
+let option;
+for (option in summerTour){
+        document.write(option + ':' + summerTour[option] + '<br/>');
+}
+
+    </pre>
+    <script>
+        function Student(biology, phisics) {
+  this.biology=biology;
+  this.phisics=phisics; 
+}
+let ivanov = new Student();
+ivanov.biology = "отлично";
+Student.prototype.email="jb@gmail.com";
+alert(ivanov.email); // выдаст "jb@gmail.com"
+alert(ivanov.biology)
+    </script>
+</body>
+</html>

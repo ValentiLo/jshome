@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        138. Пример: Создать объект myBrowser со свойствами name (значение “Microsoft Internet Explorer”) и version (значение «9.0»)
+ Решение 1:
+let myBrowser = {
+    name: "Microsoft Internet Explorer", // свойство name 
+    version: "9.0" // свойство version равно значению "9.0"
+};
+alert(myBrowser.name); // вывод значения свойства name
+alert(myBrowser.version);
+или
+139. Решение 2:
+let myBrowser = new Object(); // или let myBrowser = {}; 
+myBrowser.name= "Microsoft Internet Explorer"; // точечная нотация
+myBrowser["version"]= "9.0";  // скобочная нотация
+    </pre>
+    <script>
+        let myBrowser = new Object(); // или let myBrowser = {}; 
+myBrowser.name= "Microsoft Internet Explorer"; // точечная нотация
+myBrowser["version"]= "9.0";  // скобочная нотация
+alert(myBrowser.name); // вывод значения свойства name
+alert(myBrowser.version);
+    </script>
+</body>
+</html>

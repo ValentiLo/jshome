@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <pre>
+    145. Задание js 6_1. Создать объект Сотрудник, который содержит сведения о сотрудниках некоторой фирмы, такие как Имя, Отдел, Телефон, Зарплата (использовать функцию-конструктор и ключевое слово this). Создать экземпляр объекта
+Доступ к свойствам объектов в javaScript
+имя_объекта.имя_свойства
+agent007.Имя = "Бонд";
+alert(agent007.Имя);
+   </pre> 
+   <script>
+        function Worker (name, otdel){
+        this.name = name;
+        this.otdel = otdel;
+}
+let myWorker = new Worker("Иванов","отдел ");
+alert(myWorker.name);
+alert(myWorker.otdel);
+let agent007=new Worker()
+  agent007.Имя = "Бонд";
+  agent007.Работа="agent"
+alert(agent007.Имя);
+document.write(agent007.Работа)
+   </script>
+</body>
+</html>
