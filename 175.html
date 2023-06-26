@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        str.split(reg, limit) — разбивает строку по разделителю-шаблону:
+let a=/Иван/; // шаблон регулярного выражения
+let str="Кузьмин Иван Федорович Петров Петр Петрович Федоров Иван Петрович";
+document.write(str.split(a));
+//результат: Кузьмин , Федорович Петров Петр Петрович Федоров , Петрович
+
+    </pre>
+    <script>
+let a=/Иван/; // шаблон регулярного выражения
+let str="Кузьмин Иван Федорович Петров Петр Петрович Федоров Иван Петрович";
+document.write(str.split(a));
+//результат: Кузьмин , Федорович Петров Петр Петрович Федоров , Петрович
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Метод search(regExp) – возвращает позицию символа с которого начинается соответствие. Возвращает -1 если строка не соответствует регулярному выражению
+Пример: Найти в строке слово Иван:
+✍ Решение:
+ 
+
+let a=/Иван/; // шаблон регулярного выражения
+let str1="Кузьмин Иван Федорович"; // строка, в которой осуществляется поиск
+let str2="Петров Петр Петрович"; // строка, в которой осуществляется поиск
+ 
+if(str1.search(a)==-1) 
+  alert("не найдено")
+else
+  alert("найдено"); // будет найдено 
+ 
+if(str2.search(a)==-1) 
+  alert("не найдено") // будет не найдено 
+else
+  alert("найдено");
+    </pre>
+    <script>
+        let a=/Иван/; // шаблон регулярного выражения
+let str1="Кузьмин Иван Федорович"; // строка, в которой осуществляется поиск
+let str2="Петров Петр Петрович"; // строка, в которой осуществляется поиск
+ 
+if(str1.search(a)==-1) 
+  document.write(`Имя ${a} в ${str1} не найдено`)
+else
+document.write(`Имя ${a}  в ${str1} найдено`); // будет найдено 
+ document.write("<br>")
+if(str2.search(a)==-1) 
+document.write(`Имя ${a} в ${str2} не найдено`) // будет не найдено 
+else
+document.write(`Имя ${a} в ${str2}  найдено`);
+    </script>
+</body>
+</html>

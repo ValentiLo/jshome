@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Задание js 7_1: Пользователь вводит свои имя и фамилию (два слова, разделённые пробелом).
+Найти в заготовленном списке введенные данные (match)
+Заменить найденные данные на Петр (replace)
+Список:
+
+Кузьмин Иван   Петров Петр   Федоров Иван
+
+При вводе, например, «Иван», в результате «Кузьмин Иван» и «Федоров Иван» должны замениться на «Кузьмин Петр» и «Федоров Петр»
+    </pre>
+    <script>
+        let name=prompt("name+surname?")
+        //let surname=prompt("surname?")
+        document.write(name)
+        // let result1=name.match(/Иван/)
+        // document.write(result1.replace(result1,"Петр"))
+        let a=/Иван/; // шаблон регулярного выражения
+if(!name.match(a))  // если не найдено
+document.write(`  Имя ${a} в ${name} не найдено `)
+else
+document.write(` Имя ${a} в ${name} найдено `); // вывод "найдено" 
+document.write("<br>")
+ document.write(name.replace(a, " Петр "))
+    </script>
+</body>
+</html>
