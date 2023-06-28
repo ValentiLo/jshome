@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        ? Предыдущий элемент должен быть найден однажды или вообще не найден
++ Предыдущий элемент должен быть найден хотя бы один раз
+* Предыдущий элемент должен быть найден неограниченное количество раз или вообще не найден
+Пример: найдет abc или ас в строке, но не сможет найти abbe, поскольку символ «b» должен быть найден один раз или вообще не найден:
+let pattern=/ab?c/;
+    </pre>
+    <script>
+      let pattern=/ab?s/
+      let findLetter=prompt("how do uou write absolute or abbsolute") 
+      if (findLetter.search(pattern)==-1)
+      document.write(("wrong"))
+      else
+      document.write("right")
+    </script>
+</body>
+</html>

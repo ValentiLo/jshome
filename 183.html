@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        [\b] Используется для поиска символа забоя (backspace)
+[...] Любой символ, указанный в скобках
+[^...] Любой символ, за исключением перечисленного в скобках
+Пример: найдет ag в строке поиска, но не сможет найти ga, поскольку на первом месте должны стоять либо а, либо b, либо с:
+let pattern=/[abc] [^def]/;
+[х-у] Символы в промежутке от х до у
+[^х-у] Символы, не входящие в промежуток от х до у
+    </pre>
+    <script>
+        let pattern=/[abc][^def]/;
+        let findLetter=prompt("your name?")
+        if (!findLetter.match(pattern))
+        document.write("not found")
+        else
+        document.write("found letters")
+
+    </script>
+</body>
+</html>

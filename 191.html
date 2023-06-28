@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        \b Позиция между знаком, входящим в слова, и не входящим в слова
+\B Позиция, не находящаяся между знаком, входящим в слова, и не входящим в слова
+Пример: найдет слово cat, за которым следует пробел. Пробел является несловарным символом:
+let pattern=/cat\b/;
+    </pre>
+    <script>
+        let pattern=/cat\b/
+        let findWord=prompt("write cat and his name")
+        if(findWord.search(pattern)==-1)
+        document.write("wrong")
+        else
+        document.write("very good")
+    </script>
+</body>
+</html>

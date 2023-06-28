@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Пример: следующий пример находит буква& в строке поиска, но &буква не будет найдено (конкретно: найдет rock&, но не найдет &roll):
+        ✍ Решение:
+        Для метода search:
+        let a=/\w\W/; // шаблон регулярного выражения
+        let str1="rock&"; // строка, в которой осуществляется поиск
+        let str2="&roll"; // строка, в которой осуществляется поиск
+        if(str1.search(a)==-1) 
+          alert("не найдено")
+        else
+          alert("найдено"); // будет найдено 
+         
+        if(str2.search(a)==-1) 
+          alert("не найдено") // будет не найдено 
+        else
+          alert("найдено");
+        Для метода match:
+        
+        // ...
+        if(!str1.match(a))  // если не найдено
+          alert("не найдено")
+        else
+          alert("найдено"); // вывод "найдено" 
+        if(!str2.match(a)) // если не найдено
+          alert("не найдено") // вывод "не найдено" 
+        else
+          alert("найдено");
+    </pre>
+    <script>
+        let a=/\w\W/; // шаблон регулярного выражения
+        let str1="rock&"; // строка, в которой осуществляется поиск
+        let str2="&roll"; // строка, в которой осуществляется поиск
+        if(!str1.match(a))  // если не найдено
+  alert("не найдено")
+else
+  alert("найдено"); // вывод "найдено" 
+if(!str2.match(a)) // если не найдено
+  alert("не найдено") // вывод "не найдено" 
+else
+  alert("найдено");
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Якоря: начало строки ^ и конец $
+^ Поиск с начала строки или же с начала первой строки в многострочных данных
+$ Поиск с конца строки или с конца последней строки в многострочных данных
+Пример: выполнит поиск слова The, если оно присутствует в начале последовательности или в начале одиночной строки:
+let pattern=/^The/;
+    </pre>
+    <script>
+        let pattern=/^The/
+        let stroka=prompt("The Black sea or Black sea")
+        if(stroka.search(pattern)==-1)
+        document.write("wrong")
+        else
+        document.write("right")
+    </script>
+</body>
+</html>

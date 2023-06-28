@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>Проверка на полное совпадение
+        Два якоря одновременно ^...$ часто используются для проверки, совпадает ли строка с шаблоном полностью.
+        
+        Пример:
+        Проверим, что строка является датой в формате 12/08/11, то есть две цифры, затем двоеточие, затем ещё две цифры.
+        На языке регулярных выражений это \d\d:\d\d:\d\d
+        
+        ✍ Решение:
+        
+        let correct = "12/11/11";
+        let incorrect= "12/3/11";
+         
+        let regexp = /^\d\d:\d\d:\d\d$/;
+        alert( regexp.test(correct) ); // true
+        alert( regexp.test(incorrect) ); // false
+        </pre>
+        <script>
+             let correct = "12/11/11";
+        let incorrect= "12/3/11";
+         
+        let regexp = /^\d\d:\d\d:\d\d$/;
+        alert( regexp.test(correct) ); // true
+        alert( regexp.test(incorrect) ); // false
+        </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        {х,у} Предыдущий элемент должен быть найден не менее х раз, но не более у раз
+{х,} Предыдущий элемент должен быть найден не менее х раз
+Пример: найдет chose и choose в строке поиска, но не сможет найти chooose:
+let pattern=/cho{1,2}se/;
+    </pre>
+    <script>
+let pattern=/cho{1,2}se/
+let offer=prompt("chose? chooose ? choose?")
+if (offer.search(pattern)==-1)
+document.write("wrong")
+else
+document.write("right")
+    </script>
+</body>
+</html>

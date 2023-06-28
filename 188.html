@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        (...) Группировка всех элементов в круглых скобках в подшаблон
+Пример: осуществит поиск в строке far и for, но не fer. Пример выдаст «верно»:
+let a=/f(a|o)r/;
+let str="sdffarsdf";
+if(str.search(a)==-1) alert("неверно")
+else
+alert("верно");
+    </pre>
+    <script>
+        let a=/f(a|o)r/;
+        let str="sdffarsdf";
+if(str.search(a)==-1) alert("неверно")
+else
+alert("верно");
+    </script>
+</body>
+</html>
